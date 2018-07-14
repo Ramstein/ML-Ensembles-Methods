@@ -28,8 +28,10 @@ The final output prediction is averaged across the predictions of all of the sub
 ##### The three bagging models covered in this section are as follows:
 (a).  Bagged Decision Trees
 Bagging performs best with algorithms that have high variance. A popular example are decision trees, often constructed without pruning
+
 (b). Random Forest
 Samples of the training dataset are taken with replacement, but the trees are constructed in a way that reduces the correlation between individual classifiers. Specifically, rather than greedily choosing the best split point in the construction of the tree, only a random subset of features are considered for each split.
+
 (c).Extra Trees
 Extra Trees are another modification of bagging where random trees are constructed from samples of the training dataset.
 
@@ -39,6 +41,7 @@ Boosting ensemble algorithms creates a sequence of models that attempt to correc
 ##### The two most common boosting ensemble machine learning algorithms are:
 (a). AdaBoost
 AdaBoost was perhaps the first successful boosting ensemble algorithm. It generally works by weighting instances in the dataset by how easy or difficult they are to classify, allowing the algorithm to pay more or less attention to them in the construction of subsequent models.
+
 (b). Stochastic Gradient Boosting(the best)
 Stochastic Gradient Boosting (also called Gradient Boosting Machines) are one of the most sophisticated ensemble techniques. It is also a technique that is proving to be perhaps of the the best techniques available for improving performance via ensembles
 
